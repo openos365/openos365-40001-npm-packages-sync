@@ -10,6 +10,8 @@ fi
 
 . ~/.nvm/nvm.sh
 nvm use v14.21.3
+npm install -g node-gyp
+npm install -g yarn
 
 unset https_proxy
 unset http_proxy
