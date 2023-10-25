@@ -39,7 +39,7 @@ do
   yarn #--verbose
   yarn list > yarn.list.txt
   sed -i '$d' yarn.list.txt
-  p2 "$(date)"
+  p2 "$GITHUB_RUN_NUMBER"
   git remote -v
   cd $CMD_PATH
   rm -rf packages
