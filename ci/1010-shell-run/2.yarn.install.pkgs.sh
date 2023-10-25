@@ -38,6 +38,7 @@ do
   yarn add $line #--verbose
   yarn #--verbose
   yarn list > yarn.list.txt
+  sed -i '$d' yarn.list.txt
   p2 "$(date)"
   git remote -v
   cd $CMD_PATH
